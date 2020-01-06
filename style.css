@@ -1,0 +1,17 @@
+ /*
+Theme Name: Job_Portal
+Theme URI: www.findjobbd.com
+Author: Emon
+Author URI: www.findjobbd.com
+Description: This theme is made for blogging and posting recent jobs. Basically this site is use for busness purpase.
+Version: 1.0
+Requires at least: 4.7
+Requires PHP: 5.2.4
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: jobsite
+Tags: job site, recent job circular, job news, wanted job, find job, needed job, job circular 2020.
+*/
+
+.rank-math-seo-score.bad-seo{
+    display:none;
+}

@@ -1,0 +1,378 @@
+/*----------------------------------------------------
+
+/*=================== fonts ====================*/
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500|Rubik:500,700");
+/*---------------------------------------------------- */
+/*----------------------------------------------------*/
+/* Medium Layout: 1280px */
+/* Tablet Layout: 768px */
+/* Mobile Layout: 320px */
+/* Wide Mobile Layout: 480px */
+/*---------------------------------------------------- */
+/*----------------------------------------------------*/
+body {
+  line-height: 26px;
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #1e1d1d;
+  background-color: #f0f0ed;
+  transition:  .5s all ease;
+  -webkit-transition: .5s all ease;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  color: #000000; }
+
+.list {
+  list-style: none;
+  margin: 0px;
+  padding: 0px; }
+
+a {
+  text-decoration: none;
+  transition: all 0.3s ease-in-out; }
+  a:hover, a:focus {
+    text-decoration: none;
+    outline: none; }
+
+button:focus {
+  outline: none;
+  box-shadow: none; }
+
+.mt-25 {
+  margin-top: 25px; }
+
+.p0 {
+  padding-left: 0px;
+  padding-right: 0px; }
+
+.white_bg {
+  background: #fff !important; }
+
+.mb-50 {
+  margin-bottom: 50px; }
+
+.ml-15 {
+  margin-left: 15px; }
+
+.ml-20 {
+  margin-left: 20px; }
+
+.mt-50 {
+  margin-top: 50px; }
+
+/*---------------------------------------------------- */
+/*----------------------------------------------------*/
+.section_gap {
+  padding: 200px 0; }
+  @media (max-width: 1199px) {
+    .section_gap {
+      padding: 80px 0; } }
+
+.section_gap_top {
+  padding-top: 200px; }
+  @media (max-width: 1199px) {
+    .section_gap_top {
+      padding-top: 80px; } }
+
+.section_gap_bottom {
+  padding-bottom: 200px; }
+  @media (max-width: 1199px) {
+    .section_gap_bottom {
+      padding-bottom: 80px; } }
+      /* ===========header======= */
+
+      .header_image_size{
+        height: 120px;
+        overflow: hidden;
+      }
+
+
+/* ======================   menu area css =================== */
+.header_area{
+  margin-bottom: 30px;
+}
+.main_menu{
+    background-color: #fff;
+}
+.navbar-toggler span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background:  #000;
+    transition: all 400ms linear;
+    cursor: pointer;
+    margin: 6px;
+}
+.navbar-toggler{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    display: none;
+}
+
+.menu_nav li a{
+    color: #000000;
+    font-weight: 900;
+    padding: 12px 20px;
+    font-size: 19px;
+    display: block;
+}
+.nav > li > a:focus, .nav > li > a:hover, .current-menu-item>a{
+    text-decoration: none;
+    background-color: rgb(14, 104, 1);
+    color: #fff !important;
+}
+
+.nav_fix{
+    position: fixed;
+    z-index: 9999;
+    right: 0;
+    left: 0;
+   top:0;
+   animation: fadeIn 1s ease-in;
+}
+@keyframes fadeIn{
+  from{ margin-top: -40px; }
+  to{ margin-top: 0px; }
+}
+@-webkit-keyframes fadeIn{
+  from{ margin-top: -40px; }
+  to{ margin-top: 0px; }
+}
+.nav_fix+ .latest_job_section{
+  padding-top:80px
+}
+
+@media (max-width: 998px) {
+  .navbar-toggler{
+     display: block;
+     padding: 5px;
+  } 
+  .menu_nav li{
+    display: block;
+    text-align: center;
+  }
+  .menu_nav li a{
+      text-align: center;
+     display: block;
+     line-height: 14px;
+  }
+  .nav_fix+ .latest_job_section{
+    padding-top:100px
+  }
+  .form-inline{
+      display:none;
+  }
+
+}
+.btn-ak{
+  bottom:0;
+  right:0;
+}
+.nav_fix+ .fix-nav_menus{
+  height: 122px;
+}
+/* ======================   End menu area css =================== */
+/* =======================latest post section ==================== */
+.banner{
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+
+}
+.banner img{
+  transform: scale(1);
+  transition: .5s all ease;
+  display: block;
+}
+.banner:hover img{
+  transform: scale(1.4);
+  transition: .5s all ease;
+}
+.title_post{
+  position: absolute;
+  top: 68%;
+}
+.title_post a{
+    color:#ff0;
+}
+.title_post a:hover{
+    color:#ff0;
+    background-color:#00000082;
+}
+
+/* ============= ================ */
+.wrapper_latest_post{
+    width: 100%;
+    height: 100px;
+    padding: 9px 0px;
+    background-color:#fff;
+    margin: 2px auto;
+}
+.latest_side_post_img{
+    width: 30%;
+    float:left;
+    margin-right:3%;
+}
+.latest_site_h6{
+    width:65%;
+    float:left;
+  }
+  .ctg_link_ele {
+    font-size: 11px;
+    background: #dfdfdf;
+    padding: 2px 5px;
+    border-radius: 3px;
+    color: #848484;
+}
+  .ctg_link_ele:hover {
+    background: #000000;
+    color: rgb(202, 202, 202);
+}
+
+
+/* =====================  First category Name ============== */
+.ctg_1_section{
+  margin-bottom: 91px;
+}
+.ctg_1_heading{
+  border-bottom: 3px solid #000;
+}
+.ctg_1_heading h3{
+  background:rgb(32, 32, 32);
+  color:#fff;
+  padding: 3px 14px;
+  border-radius: 3px;
+}
+.ctg_1_wrapper{
+  height: 116px;
+}
+.ctg_date_calender{
+  background:#fff;
+  color:#000;
+  margin-left: 5px;
+}
+.ctg_1_heading:hover h3 {
+  color: #9acbff;
+}
+
+
+/* =============== Second category Name ================== */
+.ctg_2_section{
+  margin-bottom: 100px;;
+}
+.ctg_2_contener{
+  background-color: #fff;
+  border-radius: 4px;
+  margin: 10px auto;
+}
+.ctg_2_sub_containar{
+  padding:10px;
+  overflow: hidden;
+}
+.ctg_2_sub_containar h6{
+  padding:10px 0px;
+}
+.ctg_2_image{
+  overflow: hidden;
+}
+.ctg_2_image img{
+  transform: scale(1);
+  transition: .5s all ease;
+}
+.ctg_2_image:hover img{
+  transform: scale(1.3);
+}
+
+
+/* ================== Footer =================== */
+
+.footer_section{
+  background-color: #363636;
+}
+.footer_section p{
+  padding:10px 0px;
+  color: #dfdfdf;
+
+}
+
+.footer_menu{
+  display:flex;
+  list-style-type: none;
+}
+.footer_menu li>a{
+  padding: 10px ;
+  color: #acacac;
+  display: block;
+}
+
+/* ==============  Start ctg job css ================= */
+
+.page_ctg_pad{
+  padding: 30px 0px;
+}
+
+
+/* ==========  single page design ============= */
+.img_fluid_ak{
+  width: 100%;
+  height: auto;
+}
+.containt_text{
+  padding: 36px 0px;
+}
+
+/* ================= Comment template ======== */
+
+.avatar {
+  border-radius: 50%;
+}
+.comment_from_option ol, .comment_from_option li
+{
+  list-style: none;
+}
+.comment-metadata{
+  display: none;
+}
+.comment-author span{
+  display: none;
+}
+.comment-content, .comment-content>p{
+  padding: 2px 37px;
+  margin-top: -6px;
+}
+.comment-body{
+  padding: 9px 0px;
+}
+.comment-text , .comment-co{
+  font-weight: 900;
+  font-size: 30px;
+  color: #1e2262;
+}
+.comment-text{
+  font-weight: 700;
+  font-size: 20px;
+}
+/* ============Page style */
+.page_content{
+  padding-bottom: 200px;
+  color:#000
+}
+.page_content>p{
+  color:#686868;
+  text-align: justify;
+}
+@media (max-width: 441px) {
+  .banner_section{
+      display:none;
+  }
+  } 
